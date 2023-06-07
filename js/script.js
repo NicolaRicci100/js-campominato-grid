@@ -15,7 +15,10 @@ playButton.addEventListener('click', function(){ // attivo il pulsante play
     for(i = 0; i < cellsNumber; i++){
         const cell = document.createElement('div'); // creo i div figli di grid
         cell.className = 'col'; // 'col' per classe di Bootstrap
-        cell.innerText = i + 1;
+          // Controllo se è l'ultima cella della riga
+        if ((i + 1) % columns !== 0) {
+            cell.innerText = i + 1;
+        }
         cell.addEventListener('click', function(){ // se premo il pulsante
             console.log(); //scrivo il numero in log
             cell.classList.add('azure'); //diventa azzurro
