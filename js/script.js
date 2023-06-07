@@ -16,7 +16,7 @@ playButton.addEventListener('click', function(){ // attivo il pulsante play
         const cell = document.createElement('div'); // creo i div figli di grid
         cell.className = 'col'; // 'col' per classe di Bootstrap
           // Controllo se è l'ultima cella della riga
-        if ((i + 1) % columns !== 0) {
+        if ((i + 1) % cellsNumber !== 0) {
             cell.innerText = i + 1;
         }
         cell.addEventListener('click', function(){ // se premo il pulsante
