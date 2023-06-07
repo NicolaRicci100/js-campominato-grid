@@ -22,6 +22,6 @@ playButton.addEventListener('click', function(){ // attivo il pulsante play
             console.log('il numero selezionato è ' + cell.innerText); //scrivo il numero in log
             cell.classList.add('azure'); //diventa azzurro
         });
-        fullGrid.appendChild(cell); // inserisco in pagina le celle
+    fullGrid.appendChild(cell); // inserisco in pagina le celle
     }
 })
